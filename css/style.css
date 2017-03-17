@@ -1,0 +1,346 @@
+
+/* css reset */
+
+
+
+body,ul,li,p,
+h1,h2,h3,h4,
+h5,h6,img {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Microsost YaHei", "Sim Sun";
+  font-size: 12px;
+  color: #000;
+}
+
+
+ul,li {list-style: none;}
+
+
+a {text-decoration: none; color: #000;}
+
+
+img {
+  border: 0;
+  outline: 0;  
+}
+
+
+
+/* 整个容器 */
+
+
+
+#container {
+  position: relative;
+  width: 100%; /* 屏幕的百分比显示 */
+  margin: 0 auto;
+  overflow: hidden; /* 溢出的内容省略*/
+  background-color: #c7edcc;
+}
+
+
+
+/* header部分 */
+
+
+
+#headers {
+  position: relative;
+  height: 265px;
+}
+
+
+
+/* header_top部分 */
+
+#headers .header_top {
+  position: relative;
+  height: 225px;
+  background-image: url('../images/header_bg.gif');   
+}
+
+
+#headers .header_top .logo {
+  position: absolute;
+  top: 0;
+  left: 245px;
+  width: 140px;
+  height: 120px;
+}
+
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+#headers .header_top h1 {
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  width: 410px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+}
+
+
+#headers .header_top p {
+  position: absolute;
+  top: 125px;
+  left: 355px;
+  width: 470px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(right, rgba(246,237,237,0), rgba(246,237,237,1), rgba(246,237,237,0));
+  background: -moz-linear-gradient(right, rgba(246,237,237,0), rgba(246,237,237,1), rgba(246,237,237,0));
+  background: -ms-linear-gradient(right, rgba(246,237,237,0), rgba(246,237,237,1), rgba(246,237,237,0));
+  background: -o-linear-gradient(right, rgba(246,237,237,0), rgba(246,237,237,1), rgba(246,237,237,0));
+  background: linear-gradient(right, rgba(246,237,237,0), rgba(246,237,237,1), rgba(246,237,237,0));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='rgba(246,237,237,0)', endColorstr='rgba(246,237,237,0)'); /* 针对IE的渐变，使用滤镜的实现。 */
+ 
+}
+
+:root {filter: none;} /* filter是ie的私有属性，针对ie9单独处理滤镜 */
+
+
+/* header_bottom部分 */
+
+#headers .header_bottom {
+  position: relative;
+  height: 40px;
+  background-image: url('../images/nav_bg.gif');
+}
+
+
+#headers .header_bottom  ul {
+  position: absolute;
+  top: 0;
+  left: 205px;
+  width: 990px;
+}
+
+
+#headers .header_bottom  ul li {
+  float: left;
+  width: 135px;
+}
+
+
+#headers .header_bottom  ul li:hover {
+  background-color: #5674a4;
+}
+
+
+.header_bottom  ul li a {
+  display: block;
+  height: 40px;
+  border-right: 1px solid #435b80;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/* content部分 */
+
+
+
+#content {
+  position: relative;
+  height: 710px;
+  margin-top: 20px;
+}
+
+
+
+/* 侧边栏部分 */
+
+#content .asides {
+  position: absolute;
+  top: 0;
+  left: 195px;
+  width: 240px;
+  height: 705px;
+}
+
+
+#content .asides .asides_tongyong {
+  width: 240px;
+  height: 215px;
+  border: 1px solid #afc5dd;
+  margin-bottom: 28px;
+}
+
+
+#content .asides .asides_tongyong  ul {
+  width: 240px;
+  height: 168px;
+	
+}
+
+
+.asides .asides_tongyong  ul li {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 28px;
+  font-size: 12px;
+  line-height: 8px;
+  
+}
+
+
+.asides_tongyong  ul li:before {
+	position: absolute;
+	left: -17px;
+	display: block;
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+    filter:progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7660444431189777, M12=-0.6427876096865394, M21=0.6427876096865398, M22=0.7660444431189779);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+#content .asides_tongyong time {
+  float: right;
+  margin-right: 15px;
+}
+
+
+.tongyong {
+  height: 30px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ccdae9;
+  font-size: 14px;
+  line-height: 30px;
+  background: -moz-linear-gradient(to bottom,#cddbea, #f8fafc);
+  background: -webkit-linear-gradient(to bottom,#cddbea, #f8fafc);
+  background: -mos-linear-gradient(to bottom,#cddbea, #f8fafc);
+  background: -o-linear-gradient(to bottom,#cddbea, #f8fafc);
+  background: linear-gradient(to bottom,#cddbea, #f8fafc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#cddbea', endColorstr='#f8fafc');
+}
+
+
+#content .asides_tongyong address {
+  font-size: 12px;
+  line-height: 25px;
+  padding-left: 10px;
+}
+
+
+
+/* contents部分*/
+
+#content .contents {
+  position: absolute;
+  top: 0;
+  left: 475px;
+  width: 730px;
+  height: 705px;
+}
+
+
+
+/* 公司简介部分 */
+
+#content .contents .comp_pro {
+  width: 730px;
+  height: 370px;
+  border: 1px solid #afc5dd;
+}
+
+
+.contents .comp_pro p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 30px;
+  text-indent: 15px;
+}
+
+
+.contents .comp_pro p span {
+  font-weight: bold;
+}
+
+
+
+
+/* 服务范围*/
+
+#content .contents .service {
+  width: 730px;
+  height: 300px;
+  margin-top: 32px;
+  border: 1px solid #afc5dd;
+}
+
+
+
+.service ul li {
+  float: left;
+  width: 100px;
+  height: 105px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+
+.service ul li img {
+  width: 95px;
+  height: 75px;
+  border: 2px solid #cddae9;
+}
+
+
+.service ul li p {
+  width: 100px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+
+
+/* 页脚部分 */
+
+#footers {
+  width: 100%;
+  height: 115px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+#footers span {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+
+#footers img {
+	width: 15px;
+	height: 17px;
+	vertical-align: middle;
+}
